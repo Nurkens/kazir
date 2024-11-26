@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url('04fbeb70bed2dce6234c1f11c620c248.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.wrapper {
+    width: 90%; /* Гибкая ширина */
+    max-width: 420px; /* Ограничение для больших экранов */
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    color: floralwhite;
+    border-radius: 10px;
+    padding: 20px; /* Уменьшенный отступ для мобильных */
+}
+
+.wrapper h1 {
+    font-size: 28px; /* Уменьшенный размер шрифта */
+    text-align: center;
+}
+
+.wrapper .input-box {
+    width: 100%;
+    height: 50px;
+    margin: 20px 0; /* Уменьшенный отступ */
+    position: relative;
+}
+
+.input-box input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 40px;
+    font-size: 14px; /* Уменьшенный шрифт */
+    color: #fff;
+    padding: 15px 40px 15px 15px; /* Регулировка внутреннего отступа */
+}
+
+.input-box input::placeholder {
+    color: #fff;
+    font-size: 14px; /* Подходящий размер */
+}
+
+.input-box i {
+    position: absolute;
+    right: 15px; /* Сдвинуто ближе */
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 18px; /* Уменьшенный размер */
+}
+
+.wrapper .remember {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px; /* Уменьшенный шрифт */
+    margin: -10px 0 10px;
+    flex-wrap: wrap; /* Обеспечивает перенос текста */
+}
+
+.remember label input {
+    accent-color: #fff;
+    margin-right: 3px;
+}
+
+.remember a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.remember a:hover {
+    text-decoration: underline;
+}
+
+.wrapper .btn {
+    width: 100%;
+    height: 45px;
+    background: #fff;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+    font-weight: 600;
+}
+
+.wrapper .register-link {
+    font-size: 12px; /* Уменьшенный шрифт */
+    text-align: center;
+    margin-top: 15px;
+}
+
+.register-link p a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.register-link p a:hover {
+    text-decoration: underline;
+    color: red;
+}
+
+/* Медиа-запросы для адаптивности */
+@media (max-width: 768px) {
+    .wrapper {
+        padding: 20px 10px; /* Меньше отступов */
+    }
+    .wrapper h1 {
+        font-size: 24px; /* Уменьшенный заголовок */
+    }
+    .input-box input {
+        font-size: 14px;
+    }
+    .remember {
+        font-size: 11px; /* Уменьшенный шрифт */
+    }
+}
+
+@media (max-width: 480px) {
+    .wrapper {
+        padding: 15px; /* Еще меньше отступов */
+    }
+    .wrapper h1 {
+        font-size: 20px; /* Подходящий размер заголовка */
+    }
+    .input-box input {
+        font-size: 12px;
+    }
+    .remember {
+        font-size: 10px; /* Минимальный шрифт для мобильных */
+        flex-direction: column; /* Расположение элементов в столбик */
+    }
+}
